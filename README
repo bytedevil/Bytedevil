@@ -1,0 +1,20 @@
+# Autor: Pau Font
+# Edad: 21
+# Provincia: Barcelona
+# Función: Este "Script" sirve para Twittear a través de la consola de nuestro GNU/Linux. Escrito para Bash.
+# Dependencias Necesarias: Curl.
+
+read -p "Hola! escribe el mensaje que quieras publicar y pulsa enter: " TWEET                                                                                                                              
+countme()                                                                                                                                                                                                  
+{                                                                                                                                                                                                          
+    count=`echo "$TWEET" | wc -m`;                                                                                                                                                                         
+    [[ $count -gt 140 ]] && echo "Tu mensaje tiene $count caracteres, sólo se permiten 140! Tu mensaje, NO se ha podido enviar!" && exit                                                                   
+}                                                                                                                                                                                                          
+countme                                                                                                                                                                                                    
+echo "Aguarda un instante, estoy enviando tu mensaje ...."                                                                                                                                                 
+curl -u UsuarioTwitter:ContraseñaTwitter -d status="$TWEET" http://twitter.com/statuses/update.xml -o /dev/null                                                                                                   
+echo "Hecho! Tu mensaje se ha publicado. Hasta la próxima!"
+exit 0
+
+
+
