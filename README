@@ -1,7 +1,8 @@
 # Autor: Pau Font
 # Edad: 21
 # Provincia: Barcelona
-# Función: Este "Script" sirve para Twittear a través de la consola de nuestro GNU/Linux, además cuenta las letras para # asegurarse que cabe el texto integro, si no es rechazado. Escrito para Bash.
+# Función: Este "Script" sirve para Twittear a través de la consola de nuestro GNU/Linux, además cuenta las letras para
+# asegurarse que cabe el texto integro, si no es rechazado. Escrito para Bash.
 # Dependencias Necesarias: Curl.
 
 read -p "Hola! escribe el mensaje que quieras publicar y pulsa enter: " TWEET                                                                                                                              
