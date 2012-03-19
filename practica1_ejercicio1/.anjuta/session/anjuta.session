@@ -1,0 +1,28 @@
+
+[Anjuta]
+Geometry=803x575+282+29
+
+[Project Manager]
+Shortcut=C file:///home/alumne/practica1_ejercicio1 practica1_ejercicio1 
+
+[File Loader]
+Files=file:///home/alumne/Practica1C/ejercicio1.c#61%%%file:///home/alumne/practica1_ejercicio1/Debug/Archivo%20nuevo%2012#1
+
+[Document Manager]
+bookmarks=<?xml version="1.0" encoding="UTF-8"?>\n<bookmarks/>\n
+
+[Execution]
+Program uri=file:///home/alumne/practica1_ejercicio1/Debug/practica1_ejercicio1
+Run in terminal=2
+Working directories=file:///home/alumne/practica1_ejercicio1
+
+[Build]
+Configuration list=1:Default:%%%1:Debug:Debug%%%1:Profiling:Profiling%%%1:Optimized:Optimized
+Selected Configuration=Debug
+BuildArgs/Default=--enable-maintainer-mode
+BuildArgs/Debug=--enable-maintainer-mode 'CFLAGS=-g -O0' 'CXXFLAGS=-g -O0' 'JFLAGS=-g -O0' 'FFLAGS=-g -O0'
+BuildArgs/Profiling=--enable-maintainer-mode 'CFLAGS=-g -pg' 'CXXFLAGS=-g -pg' 'JFLAGS=-g -pg' 'FFLAGS=-g -pg'
+BuildArgs/Optimized=--enable-maintainer-mode 'CFLAGS=-O2' 'CXXFLAGS=-O2' 'JFLAGS=-O2' 'FFLAGS=-O2'
+
+[Debugger]
+Stop at beginning=2
